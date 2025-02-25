@@ -19,11 +19,11 @@ char calculateGrade(float avg) {
 }
 
 int main() {
-    Student students[5];
+    Student students[10];
     int i;
     
     // Input student details
-    for (i = 0; i < 5; i++) {
+    for (i = 0; i < 10; i++) {
         printf("Enter details for student %d:\n", i + 1);
         printf("Name: ");
         scanf(" %49s", students[i].name);
@@ -44,7 +44,7 @@ int main() {
     printf("--------------------------------------\n");
     printf("Name\tSubj1\tSubj2\tSubj3\tGrade\n");
     printf("--------------------------------------\n");
-    for (i = 0; i < 5; i++) {
+    for (i = 0; i < 10; i++) {
         printf("%s\t%.2f\t%.2f\t%.2f\t%c\n", students[i].name, students[i].subj1, students[i].subj2, students[i].subj3, students[i].grade);
     }
     
